@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <title>IntelliPro - Delivering Value, Building Relationship</title>
     <link rel="stylesheet" href="./assets/styles/vendor/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
@@ -53,69 +53,69 @@
             /* box-shadow: 0 0 5px 2px red; */
         }
 
-        .circle .links {
-            padding-left: 1rem;
-            padding-top: 12rem;
-        }
+            .circle .links {
+                padding-left: 1rem;
+                padding-top: 12rem;
+            }
 
-        .circle .links span {
-            margin: 1rem;
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            color: #fff;
-        }
+                .circle .links span {
+                    margin: 1rem;
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    color: #fff;
+                }
 
-        .circle .links span:hover {
-            box-shadow: 0 0 5px 5px #fff;
-        }
+                    .circle .links span:hover {
+                        box-shadow: 0 0 5px 5px #fff;
+                    }
 
-        .circle .circle-1 {
-            width: 150px;
-            height: 150px;
-            border: 1px solid #fff;
-            border-radius: 50%;
-            position: absolute;
-            left: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #fff;
-            /* box-shadow: 0 0 5px 2px #fff; */
-        }
+            .circle .circle-1 {
+                width: 150px;
+                height: 150px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                position: absolute;
+                left: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                /* box-shadow: 0 0 5px 2px #fff; */
+            }
 
-        .circle .circle-1 span {
-            left: 40px;
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            top: 70px;
-            font-size: 2.1rem;
-            color: red;
-        }
+                .circle .circle-1 span {
+                    left: 40px;
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+                    top: 70px;
+                    font-size: 2.1rem;
+                    color: red;
+                }
 
         .sec-header {
             padding: 1rem 1rem 1rem 2rem;
             box-shadow: 0 0 5px 2px red;
             height: 100px;
-            position:fixed;
-            width:100%;
+            position: fixed;
+            width: 100%;
             /* margin-right: 150px; */
         }
 
-        .sec-header .left-side {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-end;
-            position:fixed;
-        }
+            .sec-header .left-side {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                position: fixed;
+            }
 
         .menus {
             margin-right: 200px;
@@ -143,9 +143,9 @@
             background-color: #202020;
         }
 
-        .dropdown .dropdown-menu a {
-            color: #fff;
-        }
+            .dropdown .dropdown-menu a {
+                color: #fff;
+            }
 
         .navbar-nav {
             align-items: center;
@@ -157,32 +157,39 @@
             border-radius: 10px;
             color: #fff;
             box-shadow: 0 0 5px 2px #202020;
-            background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01),
-                    rgba(32, 32, 32, 1) 50%),
-                radial-gradient(ellipse at top left,
-                    rgba(22, 50, 40, 0.5), transparent 50%),
-                radial-gradient(ellipse at top right,
-                    rgba(20, 10, 10, 0.5), transparent 50%),
-                radial-gradient(ellipse at center right,
-                    rgba(255, 0, 0, 1), transparent 50%),
-                radial-gradient(ellipse at center left,
-                    rgba(255, 0, 0, 0.774), transparent 50%)
-
+            background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(32, 32, 32, 1) 50%), radial-gradient(ellipse at top left, rgba(22, 50, 40, 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(20, 10, 10, 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(255, 0, 0, 1), transparent 50%), radial-gradient(ellipse at center left, rgba(255, 0, 0, 0.774), transparent 50%)
         }
+
         .dot-icon {
             width: 40px;
             height: 40px;
             background-color: red;
             border-radius: 50%;
-            margin-top:20px;
-            margin-right:20px;
+            margin-top: 20px;
+            margin-right: 20px;
         }
-/*        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 30%;
-            
-        }*/
+        /* Add styles specific to small screens (e.g., mobile devices) */
+
+        @media (max-width: 768px) {
+            body {
+                background-color: #fff;
+                overflow-x: hidden;
+                padding: 0;
+                margin: 0;
+            }
+
+            .sec-header {
+                padding: 1rem 1rem 1rem 2rem;
+                box-shadow: 0 0 5px 2px red;
+                height: auto; 
+            }
+
+            .menus {
+                margin-right: 10px;
+            }
+
+        }
+
     </style>
 
 </head>
