@@ -1,8 +1,9 @@
-﻿<html data-bs-theme="light">
+﻿<!DOCTYPE html>
+<html data-bs-theme="light">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IntelliPro - Delivering Value, Building Relationship</title>
     <link rel="stylesheet" href="./assets/styles/vendor/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
@@ -29,7 +30,6 @@
             height: 100%;
             margin: 100px auto auto;
             position: fixed;
-            /* z-index: -10; */
         }
 
         .logo {
@@ -50,7 +50,6 @@
             flex-direction: row;
             align-items: center;
             border: 1px solid #1e3963;
-            /* box-shadow: 0 0 5px 2px red; */
         }
 
             .circle .links {
@@ -86,7 +85,6 @@
                 align-items: center;
                 justify-content: center;
                 background-color: #fff;
-                /* box-shadow: 0 0 5px 2px #fff; */
             }
 
                 .circle .circle-1 span {
@@ -106,7 +104,6 @@
             height: 100px;
             position: fixed;
             width: 100%;
-            /* margin-right: 150px; */
         }
 
             .sec-header .left-side {
@@ -157,7 +154,7 @@
             border-radius: 10px;
             color: #fff;
             box-shadow: 0 0 5px 2px #202020;
-            background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(32, 32, 32, 1) 50%), radial-gradient(ellipse at top left, rgba(22, 50, 40, 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(20, 10, 10, 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(255, 0, 0, 1), transparent 50%), radial-gradient(ellipse at center left, rgba(255, 0, 0, 0.774), transparent 50%)
+            background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(32, 32, 32, 1) 50%), radial-gradient(ellipse at top left, rgba(22, 50, 40, 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(20, 10, 10, 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(255, 0, 0, 1), transparent 50%), radial-gradient(ellipse at center left, rgba(255, 0, 0, 0.774), transparent 50%);
         }
 
         .dot-icon {
@@ -168,28 +165,33 @@
             margin-top: 20px;
             margin-right: 20px;
         }
-        /* Add styles specific to small screens (e.g., mobile devices) */
 
+        /* Add styles specific to small screens (e.g., mobile devices) */
         @media (max-width: 768px) {
-            body {
-                background-color: #fff;
-                overflow-x: hidden;
-                padding: 0;
-                margin: 0;
+            .row.pa-hero-logo {
+                margin: 20px auto auto;
             }
 
             .sec-header {
-                padding: 1rem 1rem 1rem 2rem;
+                padding: 1rem;
                 box-shadow: 0 0 5px 2px red;
-                height: auto; 
+                height: auto;
             }
 
             .menus {
-                margin-right: 10px;
+                margin: 0;
             }
 
-        }
+            .logo {
+                width: 150px;
+                height: auto;
+            }
 
+            .left-side {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
     </style>
 
 </head>
@@ -223,7 +225,6 @@
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="#">Service 1</a></li>
                                             <li><a class="dropdown-item" href="#">Service 2</a></li>
-                                            <!-- <li><hr class="dropdown-divider"></li> -->
                                             <li><a class="dropdown-item" href="#">and so on...</a></li>
                                         </ul>
                                     </li>
@@ -232,27 +233,6 @@
                         </div>
                     </nav>
                 </div>
-            </div>
-        </div>
-        <div class="circle" style="display: none;">
-            <div class="links">
-                <span style="top: 110px;left:0;" title="WhatsApp Us">
-                    <img src="https://mantechintellisys.com/wp-content/plugins/wa-sticky-button/assets/default.png"
-                         height="32px" weight="32px" />
-                </span>
-                <span style="top: 165px;left: 15px;" title="Contact Us">CN</span>
-                <span style="top: 207px;left: 50px;" title="Raise Request">RR</span>
-                <span style="left: 100px;" title="Chat with Us">
-                    <svg xmlns="http://www.w3.org/2000/svg" style="fill: #fff;" viewBox="0 0 800 800" height="32px"
-                         width="32px" role="img" alt="Chat icon" class="tawk-min-chat-icon">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M400 26.2c-193.3 0-350 156.7-350 350 0 136.2 77.9 254.3 191.5 312.1 15.4 8.1 31.4 15.1 48.1 20.8l-16.5 63.5c-2 7.8 5.4 14.7 13 12.1l229.8-77.6c14.6-5.3 28.8-11.6 42.4-18.7C672 630.6 750 512.5 750 376.2c0-193.3-156.7-350-350-350zm211.1 510.7c-10.8 26.5-41.9 77.2-121.5 77.2-79.9 0-110.9-51-121.6-77.4-2.8-6.8 5-13.4 13.8-11.8 76.2 13.7 147.7 13 215.3.3 8.9-1.8 16.8 4.8 14 11.7z">
-                        </path>
-                    </svg>
-                </span>
-            </div>
-            <div class="circle-1">
-                <div class="dot-icon"></div>
             </div>
         </div>
 
@@ -266,6 +246,7 @@
             </div>
         </div>
     </div>
+
     <div class="md:flex items-center">
         <h1 style="width: 100%;text-align: center; margin-top: 5rem;" class="bigger txt-center"></h1>
     </div>
@@ -275,16 +256,18 @@
             <p style="width: 100%;text-align: center;" class="bigger txt-center">INTELLIGENT PRODUCT DISTRIBUTOR</p>
         </div>
         <div class="has-animation animation-ltr" data-delay="10">
-            <p style="width: 100%;text-align: center;" class="bigger txt-center">Your distributor partner for Intelligent Products.</p>
+            <p style="width: 100%; text-align: center; font-size: 1.5rem;" class="bigger txt-center">Your distributor partner for Intelligent Products.</p>
         </div>
+
         <h4 class="txt-center" style="width: 100%;text-align: center;">
-            We are going under major improvement and website will be ready soon for your service.
+            We are going under major improvement and the website will be ready soon for your service.
         </h4>
         <h4 class="txt-center" style="width: 100%;text-align: center;">
-            Mean time for all your requirement you can write to us at <a href="mailto:sales@intelliprox.com">sales@intelliprox.com</a>
+            In the meantime, for all your requirements, you can write to us at <a href="mailto:sales@intelliprox.com">sales@intelliprox.com</a>
         </h4>
 
-        <img src=/assets/images/under-construction-gif-11.gif alt="Under Construction Image" style="max-width:30%; margin:0 auto; display:block">
+        <img src="/assets/images/under-construction-gif-11.gif" alt="Under Construction Image"
+             style="max-width:30%; margin:0 auto; display:block">
 
         <div style="display: flex;flex-direction: row;align-items: center;justify-content: space-evenly;display: none;">
             <div class="has-animation animation-ltr" data-delay="10">
@@ -308,6 +291,7 @@
         </div>
 
     </div>
+
     <div id="about" style="display: none;">
         <div class="container" style="margin-left: 2.5rem;">
             <div class="about">
@@ -368,7 +352,7 @@
         </div>
     </div>
 
-    <footer class="footer position-absolute" style="width:100%;bottom:0;">
+    <footer class="footer" style="width:100%;">
         <div class="row">
             <div class="col-xl-12 d-flex flex-row align-items-center">
                 <div class="col-sm-6">
