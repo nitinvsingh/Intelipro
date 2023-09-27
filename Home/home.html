@@ -29,7 +29,7 @@
             height: 100%;
             margin: 100px auto auto;
             position: fixed;
-            z-index: -10;
+            /* z-index: -10; */
         }
 
         .logo {
@@ -177,7 +177,12 @@
             margin-top:20px;
             margin-right:20px;
         }
-
+/*        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 30%;
+            
+        }*/
     </style>
 
 </head>
@@ -222,7 +227,7 @@
                 </div>
             </div>
         </div>
-        <div class="circle">
+        <div class="circle" style="display: none;">
             <div class="links">
                 <span style="top: 110px;left:0;" title="WhatsApp Us">
                     <img src="https://mantechintellisys.com/wp-content/plugins/wa-sticky-button/assets/default.png"
@@ -255,14 +260,26 @@
         </div>
     </div>
     <div class="md:flex items-center">
-        <h1 style="width: 100%;text-align: center; margin-top: 400px" class="bigger txt-center">Your partner for integrated solutions.</h1>
+        <h1 style="width: 100%;text-align: center; margin-top: 5rem;" class="bigger txt-center"></h1>
     </div>
 
-    <div style="margin-top:10rem;padding: 1rem;">
-        <div class="has-animation animation-ltr" data-delay="10">
-            <p style="width: 100%;text-align: center;" class="bigger txt-center">Some Important Facts </p>
+    <div style="margin-top:3rem;padding: 1rem;">
+        <div class="has-animation animation-ltr" data-delay="10" style="display: none;">
+            <p style="width: 100%;text-align: center;" class="bigger txt-center">INTELLIGENT PRODUCT DISTRIBUTOR</p>
         </div>
-        <div style="display: flex;flex-direction: row;align-items: center;justify-content: space-evenly;">
+        <div class="has-animation animation-ltr" data-delay="10">
+            <p style="width: 100%;text-align: center;" class="bigger txt-center">Your distributor partner for Intelligent Products.</p>
+        </div>
+        <h4 class="txt-center" style="width: 100%;text-align: center;">
+            We are going under major improvement and website will be ready soon for your service.
+        </h4>
+        <h4 class="txt-center" style="width: 100%;text-align: center;">
+            Mean time for all your requirement you can write to us at <a href="mailto:sales@intelliprox.com">sales@intelliprox.com</a>
+        </h4>
+
+        <img src=/assets/images/under-construction-gif-11.gif alt="Under Construction Image" style="max-width:30%; margin:0 auto; display:block">
+
+        <div style="display: flex;flex-direction: row;align-items: center;justify-content: space-evenly;display: none;">
             <div class="has-animation animation-ltr" data-delay="10">
                 <p class="text txt-center">
                     175+<br />
@@ -284,7 +301,7 @@
         </div>
 
     </div>
-    <div id="about">
+    <div id="about" style="display: none;">
         <div class="container" style="margin-left: 2.5rem;">
             <div class="about">
                 <p>
@@ -344,7 +361,7 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer position-absolute" style="width:100%;bottom:0;">
         <div class="row">
             <div class="col-xl-12 d-flex flex-row align-items-center">
                 <div class="col-sm-6">
