@@ -1,0 +1,15 @@
+.highlight-2-container {
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+}
+
+.x-factor-highlight-thumbnail {
+    height: 65px;
+    width: 65px;
+    background-repeat: no-repeat;
+}
+
+.highlight-2-text-container {
+    background-image: linear-gradient(to right, white, transparent 70% 100%);
+}

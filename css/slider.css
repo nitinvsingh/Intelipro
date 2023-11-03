@@ -1,0 +1,67 @@
+.brand-slider {
+    height: 150px;
+}
+
+.brand {
+    width: 125px;
+    height: 70px;
+}
+
+.brand-logo-container {
+    width: 105px;
+    height: 50px;
+}
+
+ .brand-logo {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.slider-container {
+    width: 100%;
+    height: 6rem;
+    position: relative;
+}
+
+.slider-forward-main {
+    position: absolute;
+    animation: slider-forward-main-content 36s linear infinite;
+}
+
+@keyframes slider-forward-main-content {
+    from { transform: translateX(-100%) }
+    to { transform: translateX(0) }
+}
+
+.slider-forward-secondary {
+    position: absolute;
+    animation: slider-forward-secondary-content 36s linear infinite;
+}
+
+@keyframes slider-forward-secondary-content{
+    from { transform: translateX(0) }
+    to { transform: translateX(100%) }
+}
+
+.slider-reverse-main {
+    position: absolute;
+    animation: slider-reverse-main-content 36s linear infinite;
+}
+
+@keyframes slider-reverse-main-content {
+    from { transform: translateX(0) }
+    to { transform: translateX(-100%) }
+}
+
+.slider-reverse-secondary {
+    position: absolute;
+    animation: slider-reverse-secondary-content 36s linear infinite;
+}
+
+@keyframes slider-reverse-secondary-content{
+    from { transform: translateX(100%) }
+    to { transform: translateX(0) }
+}
