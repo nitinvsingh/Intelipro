@@ -7,6 +7,11 @@
     background-color: rgb(229, 229, 229);
 }
 
+.custom-nav {
+    --bs-navbar-hover-color: #dc3545;
+    --bs-navbar-active-color: #dc3545;
+}
+
 .gray-header {
     color: #6e6e73;
 }
