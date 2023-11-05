@@ -8,10 +8,40 @@
 }
 
 .custom-nav {
-    --bs-navbar-hover-color: #dc3545;
-    --bs-navbar-active-color: #dc3545;
+    --bs-navbar-hover-color: #f50a01;
+    --bs-navbar-active-color: #f50a01;
 }
 
-.gray-header {
-    color: #6e6e73;
+.accent-button {
+    --bs-btn-bg: #f50a01;
+    --bs-btn-border-color: #f50a01;
+    font-weight: 600;
+}
+
+.accent-header {
+    /* color: #6e6e73; */
+    color:#000;
+}
+
+.accent-text {
+    color: #f50a01;
+    font-weight: 600;
+}
+
+.body-accent-text {
+    font-weight: 600;
+}
+
+.accent-border {
+    --bs-border-color: #f50a01;
+}
+
+.general-page-slide {
+    height: 500px;
+}
+
+.slide-img-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
