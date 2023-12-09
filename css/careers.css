@@ -1,0 +1,13 @@
+.careers-banner {
+    background-repeat: no-repeat; 
+    background-position: right center; 
+    background-size: contain;
+}
+.careers-mail {
+    height:250px; 
+    background-image: linear-gradient(to left, transparent, white 30%);
+}
+
+accent-secondary-color {
+    color: #6e6e73;
+}

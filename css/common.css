@@ -21,6 +21,11 @@
 .accent-header {
     /* color: #6e6e73; */
     color:#000;
+    /* color: #f50a01; */
+}
+
+.accent-subheader {
+    color: #000;
 }
 
 .accent-color {
