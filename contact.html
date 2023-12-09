@@ -9,13 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/highlight.css">
-    <link rel="stylesheet" href="./css/highlight-1.css">
-    <link rel="stylesheet" href="./css/highlight-2.css">
-    <link rel="stylesheet" href="./css/slider.css">
-    <link rel="stylesheet" href="./css/factors.css">
     <style>
         /* Sample body text color from Apple's site: #6e6e73 */
+        .map-container {
+            height: 400px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .ho-address-card {
+            background-image: linear-gradient(to right, white 35%, transparent);
+        }
     </style>
 </head>
 
@@ -33,16 +38,129 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
                 <div class="navbar-nav nav-underline">
                     <a class="nav-link" href="home.html">Home</a>
-                    <a class="nav-link" href="#">Events</a>
-                    <a class="nav-link" href="#">Brands</a>
+                    <!-- <a class="nav-link" href="#">Events</a> -->
                     <a class="nav-link" href="about.html">About us</a>
+                    <a class="nav-link" href="#">Brands</a>
                     <a class="nav-link active" aria-current="page" href="contact.html">Contact us</a>
                     <a class="nav-link" href="careers.html">Careers</a>
                 </div>
             </div>
         </div>
     </nav>
-
+    <!-- Social Connect -->
+    <div class="container mt-4">
+        <div class="rounded-3 pt-3 pb-3 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 border-end ps-lg-5 d-flex align-items-center justify-content-around">
+                        <a href="#">
+                            <img class="img-fluid" src="./imgs/social/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <a href="#">
+                            <img class="img-fluid" src="./imgs/social/fb.png" alt="Facebook">
+                        </a>
+                        <a href="#">
+                            <img class="img-fluid" src="./imgs/social/wa.jpg" alt="WhatsApp">
+                        </a>
+                        <a href="#">
+                            <img class="img-fluid" src="./imgs/social/telegram.png" alt="Telegram">
+                        </a>
+                        <a href="#">
+                            <img class="img-fluid" src="./imgs/social/x.png" alt="X">
+                        </a>
+                    </div>
+                    <div
+                        class="col-lg-4 border-end d-flex align-items-center justify-content-center pt-xl-0 pt-lg-0 pt-md-3 pt-sm-3 pt-3">
+                        <a class="accent-text link-offset-2" href="tel:+91-9637094449">
+                            <img class="img-fluid pe-1" src="./imgs/thumbnail/phone-filled.svg" alt="Phone">
+                            <span>+91-96370 94449</span>
+                        </a>
+                    </div>
+                    <div
+                        class="col-lg-4 d-flex align-items-center justify-content-center pt-xl-0 pt-lg-0 pt-md-3 pt-sm-3 pt-3">
+                        <a class="accent-text link-offset-2" href="mailto:sales@intelliprox.com">
+                            <img class="img-fluid pe-1" src="./imgs/thumbnail/email-@-filled.svg" alt="Email">
+                            <span>sales@intelliprox.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Primary Address and Form -->
+    <div class="container mt-4">
+        <div class="rounded-3 map-container" style="background-image: url(./imgs/m-2.jpg);">
+            <div class="container rounded-3 h-100 ho-address-card">
+                <div class="row h-100">
+                    <div class="col p-5">
+                        <h2 class="mt-4">IntelliPro Expert Pvt Ltd.</h2>
+                        <div class="pt-sm-5 pt-4">
+                            <h3>Head Office</h3>
+                            <div>
+                                D, 18/19, Shri Niwas Liviano,<br>Ph - 1 Kharadi, Pune,<br>Maharashtra 411014, India
+                            </div>
+                        </div>
+                        <div class="pt-sm-5 pt-4">
+                            <a type="button" class="btn btn-danger accent-button ps-4 pe-4" target="_blank"
+                                href="https://www.google.com/maps/dir//GWQP%2BVRF+Shriniwas+Liviano,+Shrinivas+Liviano+Building-A,+SHRINIVAS+LIVIANO,+Kodre+Farm+Kharadkar+Park,+Sr+No+19,+Beed+-+Ahmednagar+-+Pune+Rd,+Santipur,+Thite+Nagar,+Kharadi,+Pune,+Maharashtra+411014/@18.5395841,73.9344622,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bc2c362bbac1bed:0x470f44da1f07d2fc!2m2!1d73.9370371!2d18.5395841?entry=ttu">Need
+                                Directions?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Other addresses -->
+    <div class="container mt-4">
+        <div class="rounded-3 p-3 bg-white">
+            <h3 class="text-center pt-3 pb-3 accent-header">Other offices</h3>
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col">
+                        <h5 class="accent-color">Mumbai</h5>
+                        <div>
+                            Unit No-230, 2nd Floor, Satra Plaza, Plot No-19&20, Palm Beach Road, Sector-19D, Vashi, Navi Mumbai-400703
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5 class="accent-color">Aurangabad</h5>
+                        <div>
+                            Unit No-230, 2nd Floor, Satra Plaza, Plot No-19&20, Palm Beach Road, Sector-19D, Vashi, Navi Mumbai-400703
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5 class="accent-color">Nagpur</h5>
+                        <div>
+                            Unit No-230, 2nd Floor, Satra Plaza, Plot No-19&20, Palm Beach Road, Sector-19D, Vashi, Navi Mumbai-400703
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-5"></div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h5 class="accent-color">Gujarat</h5>
+                        <div>
+                            Unit No-230, 2nd Floor, Satra Plaza, Plot No-19&20, Palm Beach Road, Sector-19D, Vashi, Navi Mumbai-400703
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5 class="accent-color">Madhya Pradesh</h5>
+                        <div>
+                            Unit No-230, 2nd Floor, Satra Plaza, Plot No-19&20, Palm Beach Road, Sector-19D, Vashi, Navi Mumbai-400703
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5 class="accent-color">Goa</h5>
+                        <div>
+                            Unit No-230, 2nd Floor, Satra Plaza, Plot No-19&20, Palm Beach Road, Sector-19D, Vashi, Navi Mumbai-400703
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <div class="container mt-4">
         <div class="row">
