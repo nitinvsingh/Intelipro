@@ -1,0 +1,10 @@
+.map-container {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ho-address-card {
+    background-image: linear-gradient(to right, white 35%, transparent);
+}
