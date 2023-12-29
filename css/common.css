@@ -52,5 +52,5 @@
 .slide-img-bg {
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: contain;
+    background-size: cover;
 }
