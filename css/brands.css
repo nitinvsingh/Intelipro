@@ -1,0 +1,14 @@
+.brand-logo {
+    height: 50px;
+    width: 105px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+.product-img {
+    height: 175px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
